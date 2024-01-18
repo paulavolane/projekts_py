@@ -23,5 +23,7 @@ Tas ir it īpaši nepielietojami stradājot ar lielu recepšu skaitu vai sarež�
 *Saraksts ar iespējamām tīmekļa vietnēm programmatūras pārbaudei:*
 
 https://jauns.lv/recepte/deserti/694-cepti-aboli-sarkanvina
+
 https://jauns.lv/recepte/galas-edieni/2999-vista-vina-merce
+
 https://jauns.lv/recepte/deserti/3440-varitais-vanilas-krems
