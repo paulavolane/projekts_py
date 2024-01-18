@@ -1,7 +1,9 @@
 # Projekta uzdevums:
 
 Galvenais projekta uzdevums - automatizēt ikdienisķo uzdevumu. Lai to panāktu, bija nepieciešams izstrādāt programmatūru Python valodā.
-Kā automatizējamais uzdevums tika izvēlēta ēdienu recepšu vākšana. To sasniedšanai vajadzēja izpētīt tīmekļa skrāpēšanas metodi Python valodā. 
+Kā automatizējamais uzdevums tika izvēlēta ēdienu recepšu vākšana. 
+
+To sasniedšanai vajadzēja izpētīt tīmekļa skrāpēšanas metodi Python valodā. 
 Pētīšana iekļāva: iepazīšanās ar tīmekļa vietnes struktūru, saistīto Python bibliotēku pielietošanas metode, loģisko ķēžu izstrādāšana.
 
 # Lietota Python bibliotēka:
