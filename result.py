@@ -20,7 +20,7 @@ def info(url):
     return(recepte)
   
   else:
-    print('Šodien pietiks ar ūdens un gaiss :)')
+    print('Radījās kļūda. Pārbaudiet URL.')
 
 recepte_url='IEVIETOT_URL'
 recepte=info(recepte_url)
