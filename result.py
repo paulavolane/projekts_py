@@ -1,6 +1,6 @@
 import requests
 import bs4
-from PyPDF2 import PdWriter
+from PyPDF2 import PdfWriter
 
 def info(url):
   saturs=requests.get(url)
@@ -17,12 +17,22 @@ def info(url):
       'sastavdalas':sastavdalas,
       'pagatavosana':pagatavosana,
     }
+
+    return(recepte)
   
   else:
     print('Šodien pietiks ar ūdens un gaiss :)')
 
 recepte_url=''
 recepte=info(recepte_url)
+
+print(recepte['nosaukums'])
+print("Sastāvdaļas:")
+for sastavdalas in recepte['sastavdalas']:
+  print(sastavdalas)
+print("Pagatavošana:")
+for pagatavosana in recepte['pagatavosana']:
+  print("-", pagatavosana)
 
 pdfka=PdfWriter()
 
