@@ -22,7 +22,7 @@ def info(url):
   else:
     print('Šodien pietiks ar ūdens un gaiss :)')
 
-recepte_url='https://jauns.lv/recepte/galas-edieni/2999-vista-vina-merce'
+recepte_url='IEVIETOT_URL'
 recepte=info(recepte_url)
 
 print(recepte['nosaukums'])
