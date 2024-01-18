@@ -6,7 +6,7 @@ Kā automatizējamais uzdevums tika izvēlēta ēdienu recepšu vākšana.
 To sasniedšanai vajadzēja izpētīt tīmekļa skrāpēšanas metodi Python valodā. 
 Pētīšana iekļāva: iepazīšanās ar tīmekļa vietnes struktūru, saistīto Python bibliotēku pielietošanas metode, loģisko ķēžu izstrādāšana.
 
-# Lietota Python bibliotēka:
+# Lietotā Python bibliotēka:
 
 bs4 - BeautifulSoup4 - bibliotēka, kas atļāva iegūt informāciju no tīmekļa vietnes. Šī gadījumā - par receptes karti (ēdiena nosaukums, tā sastāvdaļas un pagatavošana).
 
