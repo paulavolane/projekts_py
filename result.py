@@ -1,6 +1,5 @@
 import requests
 import bs4
-from PyPDF2 import PdfWriter
 
 def info(url):
   saturs=requests.get(url)
@@ -8,9 +7,9 @@ def info(url):
   if saturs.status_code==200:
     lapa=bs4.BeautifulSoup(saturs.content, 'html.parser')
   
-    nosaukums=lapa.find('h1', class_='header--title').text.strip()
-    sastavdalas=[sastavdalas.text.strip() for sastavdalas in lapa.find_all('span', class_='ingredient__unit')]
-    pagatavosana=[pagatavosana.text.strip() for pagatavosana in lapa.find_all('span', class_='step__text text')]
+    nosaukums=lapa.find('h1', class_='heading--sizing').text.strip()
+    sastavdalas=[sastavdalas.text.strip() for sastavdalas in lapa.find_all('li', class_='recipe-ingredients__item')]
+    pagatavosana=[pagatavosana.text.strip() for pagatavosana in lapa.find_all('div', class_='recipe-step__body')]
   
     recepte={
       'nosaukums':nosaukums,
@@ -23,18 +22,13 @@ def info(url):
   else:
     print('Šodien pietiks ar ūdens un gaiss :)')
 
-recepte_url=''
+recepte_url='https://jauns.lv/recepte/galas-edieni/2999-vista-vina-merce'
 recepte=info(recepte_url)
 
 print(recepte['nosaukums'])
 print("Sastāvdaļas:")
 for sastavdalas in recepte['sastavdalas']:
-  print(sastavdalas)
+  print("-", sastavdalas)
 print("Pagatavošana:")
 for pagatavosana in recepte['pagatavosana']:
-  print("-", pagatavosana)
-
-pdfka=PdfWriter()
-
-with open('recepte.pdf', 'wb') as f:
-  pdfka.write(f)
+  print(pagatavosana)
