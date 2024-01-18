@@ -22,7 +22,7 @@ Piedāvāta druka vietnē var būt nepiemērota lietotājam, jo tā iekļauj dau
 Tas ir it īpaši nepielietojami stradājot ar lielu recepšu skaitu vai sarežģīto pagatavošanas instrukciju.
 
 
-*Saraksts ar iespējamām tīmekļa vietnēm programmatūras pārbaudei:*
+## Saraksts ar iespējamām tīmekļa vietnēm programmatūras pārbaudei:
 
 https://jauns.lv/recepte/deserti/694-cepti-aboli-sarkanvina
 
